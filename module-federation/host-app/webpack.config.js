@@ -13,6 +13,15 @@ const fedPlugin = new ModuleFederationPlugin({
     'react-dom': {
       singleton: true,
       requiredVersion: deps['react-dom']
+    },
+    '@mui/material': {
+      requiredVersion: deps['@mui/material']
+    },
+    "@emotion/react": {
+      requiredVersion: deps['@emotion/react']
+    },
+    "@emotion/styled": {
+      requiredVersion: deps['@emotion/styled']
     }
   },
   remotes: {
